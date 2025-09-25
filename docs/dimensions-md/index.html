@@ -1,0 +1,70 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Signal Flags: flag dimensions</title><meta name="description" content="Dimensions for Signal Flags designs"><link rel="stylesheet" href="/_astro/_id_.CRp2FPVC.css"></head> <body> <div class="prose mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8"> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="center">Shape</th><th align="center">Default</th><th align="center">Square</th><th align="center">Short</th><th align="center">Long</th></tr></thead><tbody><tr><td align="center">rectangle</td><td align="center">360x240 (3:2)</td><td align="center">240x240 (1:1)</td><td align="center">320x240 (4:3)</td><td align="center"></td></tr><tr><td align="center">pennant</td><td align="center">540x180</td><td align="center">540x180</td><td align="center">360x180</td><td align="center">-</td></tr><tr><td align="center">triangle</td><td align="center">360, 240 (3:2)</td><td align="center">360, 240 (3:2)</td><td align="center">320, 240 (4:3)</td><td align="center">a</td></tr><tr><td align="center">card</td><td align="center">180x240 (4:3)</td><td align="center">180x240 (4:3)</td><td align="center">180x240 (4:3)</td><td align="center">-</td></tr></tbody></table>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>rectangle</span></span>
+<span class="line"><span>    // Default 3:2 rectangle.</span></span>
+<span class="line"><span>    default: [360, 240],</span></span>
+<span class="line"><span>    // 1:1 alternative.</span></span>
+<span class="line"><span>    square: [240, 240],</span></span>
+<span class="line"><span>    // 4:3 alternative.</span></span>
+<span class="line"><span>    short: [320, 240],</span></span>
+<span class="line"><span>    // 3:4 (portrait).</span></span>
+<span class="line"><span>    card: [180, 240],</span></span>
+<span class="line"><span>swallowtail</span></span>
+<span class="line"><span>    /** Width, height, tail depth. */</span></span>
+<span class="line"><span>    // Default 3:2 rectangle.</span></span>
+<span class="line"><span>    default: [360, 240, 90],</span></span>
+<span class="line"><span>    // 1:1 alternative.</span></span>
+<span class="line"><span>    square: [240, 240, 60],</span></span>
+<span class="line"><span>    // 4:3 alternative.</span></span>
+<span class="line"><span>    short: [320, 240, 80],</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>pennant</span></span>
+<span class="line"><span>    default: [540, 180, 60],</span></span>
+<span class="line"><span>    long: [720, 180, 60],</span></span>
+<span class="line"><span>    short: [360, 180, 60],</span></span>
+<span class="line"><span>triangle</span></span>
+<span class="line"><span>    // Default 3:2.</span></span>
+<span class="line"><span>    default: [360, 240],</span></span>
+<span class="line"><span>    // 4:3 alternative.</span></span>
+<span class="line"><span>    short: [320, 240],</span></span></code></pre> </div> <footer class="text-center"><small>signal-flags v5.0.0-rc.1</small></footer> </body></html>
